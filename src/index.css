@@ -1,3 +1,175 @@
+* {
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 400;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+
 body{
   margin: 0;
+}
+
+
+/* Start Page Home */
+.Banner1 {
+  min-height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.csu-section {
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.div-csu {
+  align-items: center;
+  background-color: white;
+  box-shadow: 1px 0.5px 5px #999;
+  border-radius: 0.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  padding: 2rem;
+  max-width: 1080px;
+}
+
+.text-csu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.text-csu > img{
+  width: 70%;
+}
+
+.text-csu > p {
+  text-align: justify;
+}
+
+.video1 {
+  border-radius: 0.5rem;
+  max-width: 100%;
+}
+
+.conta {
+  width: 90%;
+  max-width: 98vw;
+  margin: 0 auto;
+}
+
+.slider {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.slider > h1 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+  margin: 2rem 0;
+  color: #7fb536 ;
+}
+
+.card-home > a{
+  text-decoration: none;
+  color: black;
+}
+
+/* .splide {
+  width: 98vw;
+} */
+
+.slide {
+  padding: 1.5rem;
+}
+
+.card-home{
+  display: flex;
+  flex-direction: column;
+  background: #f2f2f2;
+  border-radius: 10px;
+  min-height: 338px;
+  justify-content: space-between;
+}
+
+.card-home-img {
+  background-color: white;
+  object-fit: cover;
+  width: 100%;
+  height: 200px;
+  border-radius: 15px 15px 0 0;
+}
+
+.card-home-category {
+  text-transform: uppercase;
+  font-size: .9em;
+  font-weight: 700;
+  color: #e6007e;
+  padding: 10px 7px 0;
+}
+
+.card-home-title {
+  padding: 0.5rem;
+}
+
+.card-home-desc {
+  padding: 0.5rem;
+}
+
+.card-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.content-flayers{
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+
+.content-flayers > img {
+  object-fit: cover;
+  max-width: 300px;
+}
+
+/* End Page Home */
+
+@media screen and (max-width: 960px) {
+  .div-csu {
+      display: flex;
+      flex-direction: column;
+  }
+
+  .map-contactform{
+    flex-direction: column;
+  }
+
+  .leaflet-container{
+    width: 90%;
+    margin: auto;
+  }
+
+  .form-container{
+    width: 90%;
+    margin: auto;
+  }
+
+  /* .content-flayers{
+    flex-wrap: wrap;
+    align-items: center; */
+  /* } */
+
 }

@@ -6,8 +6,6 @@ import { Link } from 'react-router-dom'
 import { BsWhatsapp, BsFacebook, BsGeoAltFill, BsInstagram } from 'react-icons/bs';
 
 
-
-
 export const Footer = () => {
 
 
