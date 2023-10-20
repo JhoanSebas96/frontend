@@ -38,9 +38,9 @@ export const Home = () => {
         </section>
       </div>
       <div className='content-flayers' >
-        <img className='flayer' src={ img1 } alt="" />
-        <img className='flayer' src={ img2 } alt="" />
-        <img className='flayer' src={ img3 } alt="" />
+        <img src={img1} alt="" />
+        <img src={img2} alt="" />
+        <img src={img3} alt="" />
       </div>
 
     </>
@@ -49,33 +49,33 @@ export const Home = () => {
 
 
 const cards = [
-  { 
-    title: 'Tecnologia en Logistica', 
+  {
+    title: 'Tecnologia en Logistica',
     description: '6 Semestres',
     id: 'logistica'
   },
-  { 
-    title: 'Administración Pública', 
+  {
+    title: 'Administración Pública',
     description: '8 Semestres',
     id: 'administracion-publica'
   },
-  { 
-    title: 'Ingenieria Industrial', 
+  {
+    title: 'Ingenieria Industrial',
     description: '9 Semestres',
     id: 'ingenieria-industrial'
   },
-  { 
-    title: 'Especialización en Alta Gerencia', 
+  {
+    title: 'Especialización en Alta Gerencia',
     description: '2 Semestres',
     id: 'alta-gerencia'
   },
-  { 
-    title: 'Especialización en Gerencia Financiera', 
+  {
+    title: 'Especialización en Gerencia Financiera',
     description: '2 Semestres',
     id: 'gerencia-financiera'
   },
-  { 
-    title: 'Maestria en Gerencia de Mercadeo Digital', 
+  {
+    title: 'Maestria en Gerencia de Mercadeo Digital',
     description: '4 Semestres',
     id: 'gerencia-mercadeo-digital'
   },
