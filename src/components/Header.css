@@ -1,3 +1,7 @@
+a.active {
+  text-decoration: underline solid #F59C2F 5px;
+}
+
 .nav-bar {
   height: 80px;
   display: flex;

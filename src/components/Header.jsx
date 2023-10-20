@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import logo from '../assets/CSUYOPAL.png'
 import './Header.css'
 
@@ -27,9 +27,9 @@ export const Header = () => {
           {LinkItems.map((item, index) => {
             return (
               <li key={index}>
-                <Link className='nav-links' to={item.url} onClick={closeMobileMenu}>
+                <NavLink className='nav-links' to={item.url} onClick={closeMobileMenu}>
                   {item.title}
-                </Link>
+                </ NavLink>
               </li>
             )
           })

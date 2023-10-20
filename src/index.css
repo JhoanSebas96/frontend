@@ -1,4 +1,6 @@
 * {
+  --green: #7fb536;
+  --fuchsia: #e6007e;
   font-family: 'Urbanist', sans-serif;
   font-weight: 400;
   box-sizing: border-box;
@@ -168,6 +170,7 @@ body{
 }
 
 .textos p{
+  font-size: 18px;
   padding: 0.5rem ;
   text-align:justify;
 }
@@ -177,6 +180,18 @@ body{
   width: 100%;
 }
 /* End Page About */
+/* Start Page Courses */
+.academic-courses{
+  background-color: #fff;
+
+}
+.card-grid-courses{
+  padding: 2rem 0 ;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f2f2f2;
+  justify-content: center;
+}
 
 
 @media screen and (max-width: 960px) {
@@ -202,9 +217,15 @@ body{
   .container-about > div{
     display: block;
   }
+
   div .mision{
     display: flex;
     flex-direction: column-reverse;
+  }
+
+  .textos p{
+    font-size: 16px;
+    text-align:center;
   }
 
 }
