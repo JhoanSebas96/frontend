@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
-import logo from '../assets/react.svg'
+import logo from '../assets/CSUYOPAL.png'
 import './Header.css'
 
 
@@ -15,11 +15,11 @@ export const Header = () => {
   return (
     <>
       <nav className='nav-bar'>
-        <img
+        <Link to={ '/' } ><img
           className='logo'
           src={logo}
           alt='logo'
-        />
+        /></Link>
         <div className='menu-icon' onClick={handleClick}>
           <i className={click ? 'fi fi-br-cross' : 'fi fi-br-menu-burger'}></i>
         </div>
