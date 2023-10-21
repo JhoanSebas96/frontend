@@ -4,7 +4,7 @@ import { About } from '../pages/About'
 import { AcademicCourses, loaderAcademicCourse } from '../pages/AcademicCourses'
 import { Contact } from '../pages/Contact'
 import { LayoutPublic } from '../layout/LayoutPublic';
-import { Degrees } from '../pages/Degrees';
+import { Course, loaderCourse } from '../pages/Course';
 
 export const router = createBrowserRouter([
   {
@@ -25,12 +25,13 @@ export const router = createBrowserRouter([
         loader: loaderAcademicCourse,
       },
       {
-        path: "/contacto",
-        element: <Contact />,
+          path: "/oferta-academica/:carreraId", 
+          element: <Course />,
+          loader: loaderCourse,
       },
       {
-          path: "/oferta-academica/:carreraId", 
-          element: <Degrees />
+        path: "/contacto",
+        element: <Contact />,
       }
     ]
   },
