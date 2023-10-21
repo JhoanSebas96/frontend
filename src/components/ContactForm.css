@@ -1,0 +1,69 @@
+.form-container{
+  width: 40%;
+}
+.form-container p {
+  margin: 1rem 0;
+  font-size: 16px ;
+}
+.form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.group {
+  position: relative;
+}
+.form .group label {
+  padding: 0 3px;
+  font-size: 14px;
+  color: rgb(99, 102, 102);
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  background-color: #fff;
+  transition: all .3s ease;
+}
+.form .group input,
+.form .group textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  outline: 0;
+  width: 100%;
+  background-color: white;
+}
+.form .group input:placeholder-shown+ label, .form .group textarea:placeholder-shown +label {
+  top: 10px;
+  background-color: transparent;
+}
+.form .group input:focus,
+.form .group textarea:focus {
+  border-color: #7fb536;
+}
+.form .group textarea {
+  resize: none;
+  height: 100px;
+}
+.error{
+  font-size: 12px;
+  position: absolute;
+  top: 29px;
+  right: 10px;
+  background-color: white;
+  padding: 0 2px;
+  color: #e6007e;
+}
+.em{
+  top : 90px; 
+}
+.form button {
+  background-color: #e6007e;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
