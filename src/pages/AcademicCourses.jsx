@@ -15,16 +15,16 @@ export const AcademicCourses = () => {
   
   return (
     <div className='academic-courses'>
-      <div className='head-category'>
-        <p className='title-category'>Tecnologías</p>
+      <div className='head-category'style={{backgroundColor: 'var(--orange)'}}>
+        <p className='title-category' >Tecnologías</p>
       </div>
       <div className='card-grid-courses'>
         {tecno.map((course, index) => (
           <CardCourse course={course} key={index}  />
         ))}
       </div>
-      <div className='head-category' >
-        <p className='title-category' style={{color: '#e6007e', fontSize: '40px'}}>Pregrados</p>
+      <div className='head-category' style={{backgroundColor: 'var(--green)'}}>
+        <p className='title-category'>Pregrados</p>
       </div>
       <div className='card-grid-courses'>
         {preg.map((course, index) => (
@@ -53,7 +53,7 @@ export const AcademicCourses = () => {
 }
 
 export async function loaderAcademicCourse() {
-  const carre = Courses;
+  const carre = await Courses;
   const tecnologias = carre.filter((carrera) => carrera.nivel === 'Tecnología');
   const pregrados = carre.filter((carrera) => carrera.nivel === 'Profesional');
   const especializaciones = carre.filter((carrera) => carrera.nivel === 'Especializaciones');
