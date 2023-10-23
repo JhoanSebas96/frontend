@@ -2,7 +2,7 @@ import React from 'react'
 import { Courses } from '../data/DataCourses'
 import { useLoaderData } from 'react-router-dom'
 
-export const Course = () => {
+const Course = () => {
 
   const course = useLoaderData();
 
@@ -41,6 +41,7 @@ export const Course = () => {
   )
 }
 
+export default Course;
 
 export async function loaderCourse ( {params} ) {
   const course = Courses.find((course) => course.id === params.carreraId);

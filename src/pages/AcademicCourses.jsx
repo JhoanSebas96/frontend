@@ -4,7 +4,7 @@ import { useLoaderData } from 'react-router-dom';
 import { CardCourse } from '../components/CardCourse';
 
 
-export const AcademicCourses = () => {
+const AcademicCourses = () => {
 
   const carreras = useLoaderData();
   const tecno = carreras.tecnologias;
@@ -60,3 +60,5 @@ export async function loaderAcademicCourse() {
   const maestrias = carre.filter((carrera) => carrera.nivel === 'Maestrías');
   return { tecnologias, pregrados, especializaciones, maestrias };
 }
+
+export default AcademicCourses

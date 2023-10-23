@@ -8,9 +8,7 @@ import img2 from '../assets/img2.jpeg'
 import img3 from '../assets/img3.jpeg'
 
 
-
-
-export const Home = () => {
+const Home = () => {
   return (
     <>
       <img src={Banner1} className='Banner1' alt='CSU AREANDINA' />
@@ -46,6 +44,8 @@ export const Home = () => {
     </>
   )
 }
+
+export default Home
 
 
 const cards = [

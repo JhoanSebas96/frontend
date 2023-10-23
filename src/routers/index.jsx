@@ -1,10 +1,15 @@
 import { createBrowserRouter } from 'react-router-dom';
-import { Home } from '../pages/Home'
-import { About } from '../pages/About'
-import { AcademicCourses, loaderAcademicCourse } from '../pages/AcademicCourses'
-import { Contact } from '../pages/Contact'
+import { loaderAcademicCourse } from '../pages/AcademicCourses'
 import { LayoutPublic } from '../layout/LayoutPublic';
-import { Course, loaderCourse } from '../pages/Course';
+import { loaderCourse } from '../pages/Course';
+import { Suspense, lazy } from 'react';
+
+const Home = lazy(() => import('../pages/Home'));
+const About = lazy(() => import('../pages/About'));
+const AcademicCourses = lazy(() => import('../pages/AcademicCourses'));
+const Contact = lazy(() => import('../pages/Contact'));
+const Course = lazy(() => import('../pages/Course'));
+
 
 export const router = createBrowserRouter([
   {
@@ -13,25 +18,45 @@ export const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <Home />,
+        element: (
+          <Suspense fallback={<div>Loading... </div>}>
+            <Home />
+          </Suspense>  
+        ),
       },
       {
         path: "/nosotros",
-        element: <About />,
+        element:  (
+          <Suspense fallback={<div>Loading... </div>}>
+            <About />
+          </Suspense>  
+        ),
       },
       {
         path: "/oferta-academica",
-        element: <AcademicCourses />,
+        element:  (
+          <Suspense fallback={<div>Loading... </div>}>
+            <AcademicCourses />
+          </Suspense>  
+        ),
         loader: loaderAcademicCourse,
       },
       {
-          path: "/oferta-academica/:carreraId", 
-          element: <Course />,
-          loader: loaderCourse,
+        path: "/oferta-academica/:carreraId",
+        element: (
+          <Suspense fallback={<div>Loading... </div>}>
+            <Course />
+          </Suspense>  
+        ),
+        loader: loaderCourse,
       },
       {
         path: "/contacto",
-        element: <Contact />,
+        element:  (
+          <Suspense fallback={<div>Loading... </div>}>
+            <Contact />
+          </Suspense>  
+        ),
       }
     ]
   },

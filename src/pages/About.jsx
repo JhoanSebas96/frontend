@@ -3,7 +3,7 @@ import img1 from '../assets/escritorio.png'
 import img2 from '../assets/lapiz.png'
 import img3 from '../assets/libro.png'
 
-export const About = () => {
+const About = () => {
   return (
     <div className='container-about'>
       <div>
@@ -35,3 +35,4 @@ export const About = () => {
     </div>
   )
 }
+export default About

@@ -19,7 +19,7 @@ export const ContactForm = () => {
 
   const handleSubmit = async (values, { resetForm }) => {
     try {
-      const response = await fetch('http://localhost:3001/send-email', {
+      const response = await fetch('https://csu-app-backend.onrender.com/send-email', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
