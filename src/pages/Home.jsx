@@ -24,7 +24,7 @@ const Home = () => {
           </div>
 
           <div>
-            <video src={Video} className='video1' loop autoPlay muted ></video>
+            <video src={Video} className='video1' loop autoPlay playsInline muted ></video>
           </div>
         </div>
 

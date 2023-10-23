@@ -11,7 +11,7 @@ const Course = () => {
       <div className='title-course' >
         <h1>{course.titulo}</h1>
         <p>{course.facultad}</p>
-        <a href={`/assets/files/${course.id}.pdf`} className='btn-pdf'>Plan de estudios</a>
+        <a href={`/assets/files/${course.id}.pdf`} target='_blank' className='btn-pdf'>Plan de estudios</a>
       </div>
       <div className='content-info-course'>
         <p>INICIO: {course.inicio}</p>

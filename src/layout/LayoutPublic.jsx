@@ -7,7 +7,7 @@ import logo from '../assets/CSUYOPAL.jpg'
 
 export const LayoutPublic = () => {
   return (
-    <div>
+    <div className='root'>
       <Header />
       <Outlet />
       <FloatingWhatsApp 
