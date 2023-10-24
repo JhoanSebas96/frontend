@@ -1,4 +1,4 @@
-import { Navigate, createBrowserRouter } from 'react-router-dom';
+import { createBrowserRouter } from 'react-router-dom';
 import { loaderAcademicCourse } from '../pages/AcademicCourses'
 import { LayoutPublic } from '../layout/LayoutPublic';
 import { loaderCourse } from '../pages/Course';
@@ -55,14 +55,6 @@ export const router = createBrowserRouter([
         element:  (
           <Suspense fallback={<div>Loading... </div>}>
             <Contact />
-          </Suspense>  
-        ),
-      },
-      {
-        path:"*",
-        element: (
-          <Suspense fallback={<div>Loading... </div>}>
-            <Navigate to={"/"} />
           </Suspense>  
         ),
       }
