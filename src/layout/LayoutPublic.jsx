@@ -12,7 +12,7 @@ export const LayoutPublic = () => {
       <Outlet />
       <FloatingWhatsApp 
         accountName='CSU-Yopal Areandina'
-        phoneNumber='573208752152'
+        phoneNumber='573203965404'
         avatar={logo}
         chatMessage={`Hola  🤝 \n¿Cómo te podemos ayudar?`}
         allowClickAway = {true}
