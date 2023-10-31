@@ -34,9 +34,9 @@ export const Footer = () => {
       )
       }
       <ul className='foot-icons'>
-        <a href='https://www.facebook.com/csuareandina' ><BsFacebook className='foot-icon' /></a>
-        <a href='https://www.instagram.com/areandina_casanare_arauca/'><BsInstagram className='foot-icon' /></a>
-        <a href='http://api.whatsapp.com/send?phone=573208752152'> <BsWhatsapp className='foot-icon'/> </a>
+        <a href='https://www.facebook.com/csuareandina' target='_blank' ><BsFacebook className='foot-icon' /></a>
+        <a href='https://www.instagram.com/areandina_casanare_arauca/' target='_blank'><BsInstagram className='foot-icon' /></a>
+        <a href='http://api.whatsapp.com/send?phone=573203965404' target='_blank'> <BsWhatsapp className='foot-icon'/> </a>
       </ul>
       <div className='foot-items'>
         <ul className='foot-links'>
@@ -47,6 +47,7 @@ export const Footer = () => {
               </li>
             )
           })}
+          <li><a className='footer-link' href={`/assets/files/politicas-de-privacidad-areandina.pdf`} target='_blank'>Politicas de Privacidad</a></li>
         </ul>
         <ul className='contact-items'>
           { ContactItems.map((contact, index) => {
@@ -82,7 +83,7 @@ const LinkItems = [
   {
     title: 'Contacto',
     url: '/contacto'
-  }
+  },
 ];
 
 const ContactItems = [
