@@ -47,7 +47,7 @@ export const Footer = () => {
               </li>
             )
           })}
-          <li><a className='footer-link' href={`/assets/files/politicas-de-privacidad-areandina.pdf`} target='_blank'>Politicas de Privacidad</a></li>
+          <li><a className='footer-link' href={`/assets/files/politicas-de-privacidad-areandina.pdf`} target='_blank'>Políticas de Privacidad</a></li>
         </ul>
         <ul className='contact-items'>
           { ContactItems.map((contact, index) => {
