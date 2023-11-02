@@ -11,7 +11,7 @@ const About = () => {
           <h1>Nosotros </h1>
           <p>La Fundación Universitaria del Área Andina empezó sus labores académicas en 1983 con el sueño de contribuir al desarrollo sostenible de las diferentes regiones del país con excelencia y compromiso social.
           </p>
-          <p>Actualmente, ofrecemos acceso equitativo a diferentes grupos sociales mediante una oferta académica innovadora, pertinente, actualizada y flexible en las estrategias de formación presencial y virtual, con el  n de formar excelentes ciudadanos, profesionales éticos, emprendedores y socialmente responsables, a través de la aplicación de los diferentes campos del saber.
+          <p>Actualmente, ofrecemos acceso equitativo a diferentes grupos sociales mediante una oferta académica innovadora, pertinente, actualizada y flexible en las estrategias de formación presencial y virtual, con el fin de formar excelentes ciudadanos, profesionales éticos, emprendedores y socialmente responsables, a través de la aplicación de diferentes campos del saber.
           </p>
         </div>
 
@@ -28,7 +28,7 @@ const About = () => {
       <div className='vision'>
         <div className='textos'>
           <h1>Visión</h1>
-          <p>A 2030, Areandina será una Institución Universitaria, que ha impactado las regiones de Colombia, siendo reconocida por su contribución a la transformación social y desarrollo sostenible, desde su enfoque académico. </p>
+          <p>A 2030, Areandina será una Institución Universitaria, impactando en las regiones de Colombia, siendo reconocida por su contribución a la transformación social y desarrollo sostenible, desde su enfoque académico. </p>
         </div>
         <img src={img3} className='img1' alt='CSU AREANDINA' />
       </div>
