@@ -329,6 +329,7 @@
   justify-content: center;
 }
 .container-accordion{
+  white-space: pre-line;
   width: 90%;
   margin: 2rem auto;
 }
