@@ -52,7 +52,7 @@ const Faqs = [
     resp: 'La universidad cuenta con acreditación multicampus'
   },
   {
-    title: 'Requisitoos de inscripción',
+    title: 'Requisitos de inscripción',
     resp: 'Para iniciar con el proceso solo son requeridos los siguientes documentos:\n-Documento de identidad \n-Diploma bachiller \n-Icfes \n-Dirección y ciudad de residencia. \n-Correo electrónico personal'
   },
   {
