@@ -1,5 +1,5 @@
 import React from 'react'
-import Banner1 from '../assets/Banner1.png'
+import Banner1 from '../assets/Banner1.jpg'
 import Video from '../assets/video.mp4'
 import { CardSlider } from '../components/CardSlider';
 import logo from '../assets/footer.png'
