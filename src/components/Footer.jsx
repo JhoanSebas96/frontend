@@ -61,6 +61,9 @@ export const Footer = () => {
           })}
         </ul>
       </div>
+      <div className='copy-footer'>
+        © 2023 - CSU Casanare 
+      </div>
     </div>
   )
 }
